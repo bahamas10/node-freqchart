@@ -1,0 +1,23 @@
+{
+  "name": "freqchart",
+  "version": "0.0.0",
+  "description": "Command line tool for generating frequency charts",
+  "author": "Dave Eddy <dave@daveeddy.com> (http://www.daveeddy.com)",
+  "main": "./freqchart.js",
+  "preferGlobal": true,
+  "bin": {
+    "freqchart": "./freqchart.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "git://github.com/bahamas10/node-freqchart.git",
+  "license": "MIT",
+  "dependencies": {
+    "posix-getopt": "~1.0.0",
+    "extsprintf": "~1.0.2",
+    "strsplit": "~1.0.0",
+    "colors": "~0.6.0-1",
+    "latest": "~0.1.1"
+  }
+}
