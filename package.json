@@ -1,6 +1,6 @@
 {
   "name": "freqchart",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Command line tool for generating frequency charts",
   "author": "Dave Eddy <dave@daveeddy.com> (http://www.daveeddy.com)",
   "main": "./freqchart.js",
