@@ -126,13 +126,13 @@ all.forEach(function(o) {
   var perc = count / total * 100;
 
   if (crossout.indexOf(name) !== -1) {
-    var s = sprintf('X %-23s |%s| %d (%f%%)', name, progressbar(perc), count, perc.toFixed(1));
+    var s = sprintf('X %-23s |%s| %d (%f%%)', name || '', progressbar(perc), count, perc.toFixed(1));
     console.log(colors.mode === 'none' ? s : s.red);
     reallygone.push(name);
   } else if (remove.indexOf(name) !== -1) {
     removed.push(name);
   } else {
-    var s = sprintf('  %-23s |%s| %d (%f%%)', name, progressbar(perc), count, perc.toFixed(1));
+    var s = sprintf('  %-23s |%s| %d (%f%%)', name || '', progressbar(perc), count, perc.toFixed(1));
     console.log(s);
     found.push(name);
   }
